@@ -1,4 +1,8 @@
-create table payments (
+create database if not exists payfast;
+
+use payfast;
+
+create table if not exists payments (
     id int not null primary key auto_increment,
     status varchar(255), data varchar(255),
     forma_de_pagamento varchar(255),
